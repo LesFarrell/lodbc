@@ -9,7 +9,8 @@ Simple Example:
 ```lua
 odbc = require("lodbc")
 
-db = odbc.connect('Driver={MariaDB ODBC 3.1 Driver};Server=127.0.0.1;Port=3306;Database=<Your Database>;User=<Your Username>;Password=<Your Password>;Option=3;')
+db, error = odbc.connect('Driver={MariaDB ODBC 3.1 Driver};Server=<Your Host>;Port=3306;Database=<Your Database>;User=<Your Username>;Password=<Your Password>;Option=3;')
+if (error ~= nill) then print(error) end
 
 results, error = db:exec('CREATE TABLE IF NOT EXISTS Names (FirstName TEXT,  Surname TEXT, TimeStamp DATETIME);')
 if (error ~= nill) then print(error) end
