@@ -38,3 +38,10 @@ end
 
 db:close()
 ```
+
+
+
+
+COPYRIGHT
+
+Copyright © 2022 by Les Farrell. License is MIT.
