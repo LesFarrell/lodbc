@@ -1,7 +1,7 @@
 # lodbc
 Small Lua module for connecting to and querying ODBC databases.
 
-I'm still learning Lua, so this is very much work in progress!
+I'm still learning Lua, so this is very much **work in progress!**
 
 
 Simple Example:
